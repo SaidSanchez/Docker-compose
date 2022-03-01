@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* columnas flotantes*/
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Opcional si se desean agregar mas elementos*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* contenido */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+/* Barra de navegacion*/
+.navbar {
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none; 
+}
+
+
+/* cambio de color cuando se seleccione*/
+.navbar a:hover {
+  background-color: #ddd; 
+  color: black; 
+}
+  
